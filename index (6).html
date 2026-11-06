@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VOLTA FEST | Volume 2 Coming Soon</title>
+<meta name="description" content="Volta Fest Vol. 1 is done. Thank you Dubai. Volume 2 is coming soon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#030304;--ink:#f5f4ff;--cyan:#22c8ff;--purple:#a43bff;--pink:#ff3fa4;--orange:#ffb02e;--line:rgba(164,59,255,.4);
+--grad:linear-gradient(100deg,var(--cyan),var(--purple) 35%,var(--pink) 65%,var(--orange))}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 1.05rem/1.6 "DM Sans",system-ui,sans-serif;overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header{display:flex;align-items:center;gap:14px;padding:18px 0}
+header img{height:48px;width:48px;border-radius:50%;object-fit:cover;background:#fff}
+header b{font:400 1.7rem/1 Anton,Impact,sans-serif;letter-spacing:.04em;text-transform:uppercase}
+.btn{display:inline-block;background:var(--grad);color:#0a0610;font-weight:700;text-decoration:none;padding:14px 26px;border-radius:999px;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--purple)}
+
+.hero{position:relative;padding:40px 0 88px;text-align:center}
+.hero::before{content:"";position:absolute;left:50%;top:52%;width:min(90vw,640px);aspect-ratio:1;transform:translate(-50%,-50%);border:3px solid var(--line);border-radius:50%;box-shadow:0 0 80px rgba(164,59,255,.25)}
+.hero>*{position:relative}
+.logopair{display:flex;justify-content:center;align-items:center;gap:18px;margin-bottom:26px}
+.logopair img{width:clamp(110px,24vw,190px);border-radius:50%;object-fit:cover;background:#fff;aspect-ratio:1}
+.logopair img.volta{background:#000;box-shadow:0 0 40px rgba(164,59,255,.55)}
+.logopair span{font:400 1.8rem Anton,sans-serif;color:var(--pink)}
+.status{display:inline-block;border:1px solid var(--line);padding:8px 18px;border-radius:999px;font-weight:500;margin-bottom:18px}
+h1{font:400 clamp(4.2rem,17vw,11rem)/.9 Anton,Impact,sans-serif;text-transform:uppercase}
+h1 span{display:block;font-size:.6em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{max-width:34rem;margin:24px auto 28px}
+.hero .btn{margin:4px}
+
+section{padding:72px 0;border-top:1px solid var(--line)}
+h2{font:400 clamp(2rem,6vw,3.4rem)/1 Anton,Impact,sans-serif;text-transform:uppercase;margin-bottom:20px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:36px 32px}
+.cols h3{font:700 1.15rem/1.3 "DM Sans",sans-serif;margin-bottom:6px;color:var(--cyan)}
+.big{font:400 clamp(3rem,9vw,5.5rem)/1 Anton,Impact,sans-serif;display:block;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;width:fit-content}
+.thanks p{max-width:40rem;font-size:1.2rem}
+.thanks p+p{margin-top:14px}
+.next{background:linear-gradient(180deg,rgba(164,59,255,.14),rgba(255,63,164,.08))}
+.next .row{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+footer{padding:36px 0 48px;border-top:1px solid var(--line);font-size:.9rem;opacity:.85}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+button.btn{border:0;font:inherit;font-weight:700;cursor:pointer}
+dialog{background:#0d0a14;color:var(--ink);border:1px solid var(--line);border-radius:20px;padding:28px;width:min(92vw,420px);margin:auto}
+dialog::backdrop{background:rgba(0,0,0,.75)}
+dialog h2{font-size:2rem;margin-bottom:6px}
+dialog p.sub{opacity:.8;margin-bottom:18px}
+label{display:block;font-weight:500;margin:14px 0 6px}
+input{width:100%;padding:13px 14px;border-radius:12px;border:1px solid var(--line);background:#050309;color:var(--ink);font:inherit}
+.form-row{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.msg{margin-top:14px;min-height:1.4em}
+.msg.ok{color:var(--cyan)}.msg.err{color:var(--pink)}
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <img src="voltafest.jpg" alt="Volta Fest logo">
+  <img src="fitfest.jpg" alt="FitFest Events logo">
+  <b>Volta Fest</b>
+</header>
+
+<main>
+  <div class="hero wrap">
+    <div class="logopair">
+      <img class="volta" src="voltafest.jpg" alt="Volta Fest logo">
+      <span>X</span>
+      <img src="fitfest.jpg" alt="FitFest Events logo">
+    </div>
+    <p class="status">Volume 1 is done. Thank you, Dubai.</p>
+    <h1>Volta Fest<span>Vol. 2 soon</span></h1>
+    <p class="lede">The 5-a-side street football tournament made for the fans is coming back. Dates and venue are being locked in.</p>
+    <button class="btn" type="button" id="open-notify">Get notified</button>
+    <a class="btn ghost" href="#partner">Partner with us</a>
+  </div>
+
+  <section class="thanks">
+    <div class="wrap">
+      <h2>Vol. 1 was loud</h2>
+      <p>To every team that stepped on the turf, every fan who packed the sidelines at MVP Lab Dubai, and everyone who helped us pull it off: thank you.</p>
+      <p>You made the first one what it was. We're taking what worked, fixing what didn't, and building Volume 2 bigger.</p>
+    </div>
+  </section>
+
+  <section id="volume-2">
+    <div class="wrap">
+      <h2>What we're working on</h2>
+      <div class="cols">
+        <div><span class="big">?</span><h3>Date</h3><p>Coming soon. Follow along so you don't miss the announcement.</p></div>
+        <div><span class="big">?</span><h3>Venue</h3><p>Still to be confirmed.</p></div>
+        <div><span class="big">5v5</span><h3>Format</h3><p>Fast, skillful street football. That part stays.</p></div>
+        <div><span class="big">Free</span><h3>For spectators</h3><p>Fans are why we do this. Details for Vol. 2 will follow.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="next" id="partner">
+    <div class="wrap">
+      <h2>Want in on Vol. 2?</h2>
+      <p style="max-width:38rem">Team captains who want first word on registration, and brands interested in sponsoring, food, media or fan zone activations: message us on WhatsApp and we'll get back to you.</p>
+      <div class="row">
+        <a class="btn" target="_blank" rel="noopener" href="https://wa.me/971502655326?text=Hi%20Volta%20Fest%2C%20I%20want%20to%20play%20in%20Volume%202.%20Please%20send%20me%20the%20details.">I want to play</a>
+        <a class="btn ghost" target="_blank" rel="noopener" href="https://wa.me/971502655326?text=Hi%20Volta%20Fest%2C%20I%27m%20interested%20in%20sponsoring%20or%20partnering%20for%20Volume%202.">Sponsor or partner</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Volta Fest. All rights reserved.</span>
+    <span>Made for the fans. In collaboration with FitFest Events.</span>
+  </div>
+</footer>
+
+
+<dialog id="notify">
+  <form id="notify-form" method="dialog">
+    <h2>Get notified</h2>
+    <p class="sub">Be the first to know when Volume 2 is announced.</p>
+    <label for="email">Email address</label>
+    <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+    <label for="phone">Mobile number</label>
+    <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="+971 50 123 4567">
+    <div class="form-row">
+      <button class="btn" type="submit" id="send">Notify me</button>
+      <button class="btn ghost" type="button" id="close-notify">Close</button>
+    </div>
+    <p class="msg" id="msg" role="status"></p>
+  </form>
+</dialog>
+
+<script>
+const dlg=document.getElementById('notify'),form=document.getElementById('notify-form'),msg=document.getElementById('msg'),send=document.getElementById('send');
+document.getElementById('open-notify').onclick=()=>{msg.textContent='';msg.className='msg';dlg.showModal()};
+document.getElementById('close-notify').onclick=()=>dlg.close();
+form.addEventListener('submit',async e=>{
+  e.preventDefault();
+  send.disabled=true;msg.className='msg';msg.textContent='Sending...';
+  try{
+    const r=await fetch('https://formsubmit.co/ajax/voltafestevents@gmail.com',{
+      method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},
+      body:JSON.stringify({email:form.email.value,phone:form.phone.value,_subject:'Volta Fest Vol. 2 - new notify sign-up',_captcha:'false'})
+    });
+    if(!r.ok)throw 0;
+    msg.className='msg ok';msg.textContent="You're on the list. We'll message you when Volume 2 is announced.";
+    form.reset();
+  }catch(err){
+    msg.className='msg err';msg.textContent='Something went wrong. Please try again or message us on WhatsApp.';
+  }
+  send.disabled=false;
+});
+</script>
+</body>
+</html>
